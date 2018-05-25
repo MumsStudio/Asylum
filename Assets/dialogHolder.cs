@@ -6,6 +6,7 @@ public class dialogHolder : MonoBehaviour
 
     public string dialogue;
     private DMM dMAn;
+    public string pic;
 
     public string[] dialogueLines;
 
