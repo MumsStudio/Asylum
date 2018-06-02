@@ -12,9 +12,10 @@ public class DMM : MonoBehaviour {
     public string[]dialogLines;
     public int currentLine;
 
+    private playercontroller thePlayer;
 	// Use this for initialization
 	void Start () {
-		
+        thePlayer = FindObjectOfType<playercontroller>();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +33,7 @@ public class DMM : MonoBehaviour {
             dialogActive = false;
 
             currentLine = 0;
+            thePlayer.canMove = true;
         }
 
         dText.text = dialogLines[currentLine];
@@ -48,5 +50,6 @@ public class DMM : MonoBehaviour {
     {
         dialogActive = true;
         dBox.SetActive(true);
+        thePlayer.canMove = false;
     }
 }
