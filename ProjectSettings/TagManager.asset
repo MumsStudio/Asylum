@@ -44,3 +44,9 @@ TagManager:
   - name: player
     uniqueID: 3041794291
     locked: 0
+  - name: daoshu2
+    uniqueID: 415424649
+    locked: 0
+  - name: top
+    uniqueID: 1986691423
+    locked: 0
