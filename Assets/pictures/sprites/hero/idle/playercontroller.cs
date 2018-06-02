@@ -9,14 +9,27 @@ public class playercontroller : MonoBehaviour {
 	private bool playermoving;
 	private Vector2 lastMove;
 
+    private Rigidbody2D myRigidbody;
+
+    public bool canMove;
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        myRigidbody = GetComponent<Rigidbody2D>();
+        canMove = true;
+      
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		playermoving = false;
+
+        if (!canMove)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            return;
+        }
+
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime,0f,0f));
