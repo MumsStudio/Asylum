@@ -19,7 +19,10 @@ public class SaveAndLoad : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetButton("QuickSave"))
+        {
+            Save();
+        }
 	}
 
     public void Save()
