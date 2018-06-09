@@ -5,7 +5,7 @@ using UnityEngine;
 public class changeSceneTo : MonoBehaviour {
 
 	public void play(string sceneTochangeTo){
-		Application.LoadLevel (sceneTochangeTo);
+		//Application.LoadLevel (sceneTochangeTo);
 	}
 
 	public void quit(){
