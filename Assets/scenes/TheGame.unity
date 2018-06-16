@@ -1396,6 +1396,7 @@ MonoBehaviour:
   - {fileID: 0}
   dialogueLines:
   - "\u810F\u810F\u7684\u9A6C\u6876"
+  inzone: 0
 --- !u!61 &990655677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1706,6 +1707,7 @@ MonoBehaviour:
   dialogueLines:
   - knock knock
   - the door is locked
+  inzone: 0
 --- !u!61 &1084252365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2042,6 +2044,7 @@ MonoBehaviour:
   - {fileID: 0}
   dialogueLines:
   - "\u73B0\u5728\u6CA1\u6709\u7761\u89C9\u7684\u5FC5\u8981"
+  inzone: 0
 --- !u!61 &1446661647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2777,6 +2780,7 @@ MonoBehaviour:
   - {fileID: 0}
   dialogueLines:
   - "\u4E00\u6735\u67AF\u840E\u7684\u53D1"
+  inzone: 0
 --- !u!61 &1663394395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2898,6 +2902,7 @@ MonoBehaviour:
   dialogueLines:
   - "\u6211\u7684\u684C\u5B50\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684"
   - "\u4E5F\u6CA1\u6709\u4EC0\u4E48\u4E1C\u897F\u53EF\u4EE5\u653E"
+  inzone: 0
 --- !u!61 &1735399486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3016,6 +3021,7 @@ MonoBehaviour:
   - {fileID: 0}
   dialogueLines:
   - "\u8FD9\u4E2A\u662F\u6D17\u624B\u53F0"
+  inzone: 0
 --- !u!61 &1801849334
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -27,6 +27,14 @@ public class playercontroller : MonoBehaviour {
         if (!canMove)
         {
             myRigidbody.velocity = Vector2.zero;
+            playermoving = false;
+
+            anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+            anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+            anim.SetBool("playermoving", playermoving);
+            anim.SetFloat("lastMoveX", lastMove.x);
+            anim.SetFloat("lastMoveY", lastMove.y);
+
             return;
         }
 

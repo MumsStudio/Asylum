@@ -19,17 +19,17 @@ public class DMM : MonoBehaviour {
     public int currentLine;
 
     private playercontroller thePlayer;
-<<<<<<< HEAD
+
 
    // public playercontroller temPlayer;
 	// Use this for initialization
-	void Start () {
-=======
+	
+
 
 
     // Use this for initialization
     void Start () {
->>>>>>> master
+
         thePlayer = FindObjectOfType<playercontroller>();
 	}
 
