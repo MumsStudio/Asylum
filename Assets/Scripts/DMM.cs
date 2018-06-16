@@ -13,6 +13,8 @@ public class DMM : MonoBehaviour {
     public int currentLine;
 
     private playercontroller thePlayer;
+
+   // public playercontroller temPlayer;
 	// Use this for initialization
 	void Start () {
         thePlayer = FindObjectOfType<playercontroller>();
