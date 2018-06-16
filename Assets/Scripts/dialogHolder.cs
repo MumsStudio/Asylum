@@ -4,11 +4,12 @@ using UnityEngine;
 public class dialogHolder : MonoBehaviour
 {
 
-    public string dialogue;
+    //public string dialogue;
     private DMM dMAn;
+    public Sprite[] DialogPortraitL;
+    public Sprite[] DialogPortraitR;
 
     public string[] dialogueLines;
-
 
     // Use this for initialization
     void Start()
@@ -29,12 +30,15 @@ public class dialogHolder : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 //dMAn.ShowBox(dialogue);
-
                 if (!dMAn.dialogActive)
                 {
                     dMAn.dialogLines = dialogueLines;
                     dMAn.currentLine = 0;
                     dMAn.ShowDialogue();
+
+                    //add dialog portrait
+                    dMAn.imageL= DialogPortraitL;
+                    dMAn.imageR = DialogPortraitR;
                 }
             }
         }

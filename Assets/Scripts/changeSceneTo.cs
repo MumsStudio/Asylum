@@ -9,7 +9,7 @@ public class changeSceneTo : MonoBehaviour {
 	}
 
 	public void quit(){
-		Debug.Log ("Quit !!!!");
+		Debug.Log ("Game Quit !!!!");
 		Application.Quit ();
 	}
 }
