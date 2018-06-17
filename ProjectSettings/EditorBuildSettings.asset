@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/scenes/caidan.unity
+    guid: c6df413a68f514aeba37d19bab227542
   m_configObjects: {}

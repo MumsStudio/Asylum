@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 87638031}
   - component: {fileID: 87638030}
   m_Layer: 5
-  m_Name: ExitButton
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271, y: -287}
+  m_AnchoredPosition: {x: 541, y: -271}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87638030
@@ -425,7 +425,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: caidan
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -571,7 +571,7 @@ Transform:
   m_LocalScale: {x: 0.5675101, y: 0.6116975, z: 1}
   m_Children: []
   m_Father: {fileID: 1516614091}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &167780232
 SpriteRenderer:
@@ -1427,7 +1427,7 @@ Transform:
   m_Children:
   - {fileID: 990655675}
   m_Father: {fileID: 1516614091}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &764822449
 BoxCollider2D:
@@ -1669,8 +1669,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990655674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.51, y: 0.345, z: 0}
-  m_LocalScale: {x: -0.3384988, y: 0.9681897, z: 0.89546996}
+  m_LocalPosition: {x: 0.534, y: 0.327, z: 0}
+  m_LocalScale: {x: -0.3088802, y: 0.9681897, z: 0.89546996}
   m_Children: []
   m_Father: {fileID: 764822448}
   m_RootOrder: 0
@@ -1688,10 +1688,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPortraitL:
   - {fileID: 0}
+  - {fileID: 0}
   DialogPortraitR:
   - {fileID: 0}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
-  - "\u810F\u810F\u7684\u9A6C\u6876"
+  - "\u4E00\u4E2A\u9A6C\u6876\u3002\u3002\u3002\u3002"
+  - "\u6211\u73B0\u5728\u8FD8\u8FD8\u6CA1\u6709\u5C3F\u610F"
   inzone: 0
 --- !u!61 &990655677
 BoxCollider2D:
@@ -1944,7 +1947,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Main Menu
+  m_Text: 'Menu
 
 '
 --- !u!222 &1073461958
@@ -1996,13 +1999,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPortraitL:
   - {fileID: 0}
+  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
+  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
+  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
+  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
   - {fileID: 0}
   DialogPortraitR:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
+  - "\u3002\u3002\u3002\u3002\u3002\u3002"
   - knock knock
-  - the door is locked
+  - "\u540C\u5B66\uFF0C\u4F60\u9192\u5566\u5417\uFF1F"
+  - "\u4F60\u8C01\u554A\uFF0C\u5413\u6211\u6211\u4E00\u8DF3"
+  - "\u540C\u5B66\u3002\u3002\u3002\u3002"
+  - "\u4F60\u5148\u51FA\u6765\uFF0C"
+  - "\u6211\u7ED9\u4F60\u770B\u6211\u7684\u5927\u5B9D\u8D1D\uFF01"
+  - "\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002"
   inzone: 0
 --- !u!61 &1084252365
 BoxCollider2D:
@@ -2076,7 +2097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4901961, g: 0.4901961, b: 0.4901961, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2208,7 +2229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1309187561
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2355,7 +2376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1424929971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2440,7 +2461,7 @@ Transform:
   m_Children:
   - {fileID: 1446661645}
   m_Father: {fileID: 1516614091}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1437663214
 BoxCollider2D:
@@ -2555,9 +2576,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPortraitL:
   - {fileID: 0}
-  DialogPortraitR:
   - {fileID: 0}
+  DialogPortraitR:
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
+  - "\u6211\u8FD9\u662F\u7761\u4E86\u591A\u4E45"
   - "\u73B0\u5728\u6CA1\u6709\u7761\u89C9\u7684\u5FC5\u8981"
   inzone: 0
 --- !u!61 &1446661647
@@ -2733,11 +2757,11 @@ Transform:
   - {fileID: 1614145748}
   - {fileID: 248879494}
   - {fileID: 1043190915}
-  - {fileID: 1548243584}
   - {fileID: 764822448}
   - {fileID: 1655327834}
   - {fileID: 1437663213}
   - {fileID: 167780231}
+  - {fileID: 1548243584}
   m_Father: {fileID: 1794684232}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2770,7 +2794,7 @@ Transform:
   m_Children:
   - {fileID: 1084252363}
   m_Father: {fileID: 1516614091}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1548243585
 BoxCollider2D:
@@ -3328,7 +3352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1516614091}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1655327835
 SpriteRenderer:
@@ -3418,10 +3442,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPortraitL:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   DialogPortraitR:
   - {fileID: 0}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
   - "\u4E00\u6735\u67AF\u840E\u7684\u53D1"
+  - "\u8FD9\u4E5F\u662F\u4E00\u5FAE\u5C0F\u7684\u751F\u547D\u4F53\u554A\u3002\u3002\u3002\u3002\u3002\u3002"
+  - "\u771F\u662F\u6B8B\u5FCD\u5440\uFF01"
   inzone: 0
 --- !u!61 &1663394395
 BoxCollider2D:
@@ -3719,12 +3749,24 @@ MonoBehaviour:
   DialogPortraitL:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   DialogPortraitR:
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
-  - "\u6211\u7684\u684C\u5B50\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684"
-  - "\u4E5F\u6CA1\u6709\u4EC0\u4E48\u4E1C\u897F\u53EF\u4EE5\u653E"
+  - "\u6EE1\u662F\u7070\u5C18\u7684\u684C\u5B50\u6CA1\u4EC0\u4E48\u7279\u522B\u7684"
+  - "\u684C\u5B50\u4E0B\u9762\u6709\u4E00\u4E2A\u62BD\u5C49\u3002\u3002\u3002"
+  - "\u91CC\u9762\u6709\u4E00\u672C\u4E66\u300A\u4E09\u4F53\u300B"
+  - "\u4F5C\u8005\u662F\u3002\u3002\u3002\u3002\u3002\u3002\u8017\u5B50\u5E05B\u65AF\u57FA"
+  - "\u4EBA\u7C7B\u7684\u60F3\u8C61\u529B\u53EF\u771F\u662F\u5929\u9A6C\u884C\u7A7A\u554A"
+  - "\u611F\u53F9\uFF01\uFF01"
   inzone: 0
 --- !u!61 &1735399486
 BoxCollider2D:
@@ -3821,8 +3863,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1801849331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.287, y: 0.413, z: 0}
-  m_LocalScale: {x: 0.78897583, y: 0.8627436, z: 0.89546996}
+  m_LocalPosition: {x: 0.238, y: 0.431, z: 0}
+  m_LocalScale: {x: 0.62819993, y: 0.87999845, z: 0.9133794}
   m_Children: []
   m_Father: {fileID: 1588982618}
   m_RootOrder: 0
@@ -3840,10 +3882,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPortraitL:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   DialogPortraitR:
   - {fileID: 0}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
+  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
   dialogueLines:
-  - "\u8FD9\u4E2A\u662F\u6D17\u624B\u53F0"
+  - "\u3002\u3002\u3002\u3002\u3002\u3002\u3002"
+  - "\u6C34\u9F99\u5934\u5E76\u6CA1\u6709\u6C34\u51FA\u6765"
+  - "\u505C\u6C34\u4E86\u5417\u3002\u3002\u3002"
+  - "\u53CD\u6B63\u6211\u4E5F\u4E0D\u6E34"
   inzone: 0
 --- !u!61 &1801849334
 BoxCollider2D:
