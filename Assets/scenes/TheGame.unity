@@ -4219,6 +4219,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1309187561}
     m_Modifications:
+    - target: {fileID: 114494129116597018, guid: d66aea5cf7dc94b4f88facef1db8d289,
+        type: 2}
+      propertyPath: eleList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224142792216790926, guid: d66aea5cf7dc94b4f88facef1db8d289,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -4344,6 +4349,12 @@ Prefab:
       propertyPath: digestHelper
       value: 
       objectReference: {fileID: 1669416769}
+    - target: {fileID: 114494129116597018, guid: d66aea5cf7dc94b4f88facef1db8d289,
+        type: 2}
+      propertyPath: eleList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d66aea5cf7dc94b4f88facef1db8d289, type: 2}
   m_IsPrefabParent: 0
