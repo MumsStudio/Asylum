@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74c0dc74115eaf24d97a72c9146f69b0, type: 3}
-  m_Name: Ra
+  m_Name: Los
   m_EditorClassIdentifier: 
-  elementID: 0
-  description: An element that will create wood.
-  name: Ra
-  elementImage: {fileID: 21300000, guid: 1129e405859034844a20b9a3f691948b, type: 3}
+  elementID: 1
+  description: One of the most common element which forges iron
+  name: Los
+  elementImage: {fileID: 21300000, guid: 5edd9ac14e773e2438be2575124b446b, type: 3}
