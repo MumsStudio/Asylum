@@ -16,9 +16,10 @@ public class EatSelected : MonoBehaviour {
     //dk hwo to add image into the layout by script
     //using public image reference instead
     public GameObject[] eleImage =  new GameObject[5];
+    public GameObject stomach;
 
     public Text digestHelper;
-    public List<Element> eleList;
+    public List<Element> currEleList;
 
 	void Start () {
         bt.onClick.AddListener(triggerEatOption);
@@ -32,7 +33,7 @@ public class EatSelected : MonoBehaviour {
         //update info based on the given element
 
         //load and add elements name
-        foreach (Element ele in eleList)
+        foreach (Element ele in currEleList)
         {
             temp += "   " + ele.name;
         }
@@ -45,12 +46,25 @@ public class EatSelected : MonoBehaviour {
         }
         int counter = 0;
         Image[] tempImag = new Image[5];
-        foreach (Element ele in eleList)
+        foreach (Element ele in currEleList)
         {
             tempImag[counter] = eleImage[counter].GetComponentInChildren<Image>();
             tempImag[counter].sprite = ele.elementImage;
             eleImage[counter].SetActive(true);
             counter++;
         }
+    }
+
+    //the method triggered when player hit yes eat bt
+    public void Eat()
+    {
+        //add elements into stomach
+        foreach(Element ele in currEleList)
+        {
+            stomach.GetComponent<EatIntoStomach>().addToStomach(ele);
+        }
+
+        //destory bt after eaten
+        Destroy(gameObject);
     }
 }

@@ -93,10 +93,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  stomach: {fileID: 0}
   digestHelper: {fileID: 0}
-  eleList:
-  - {fileID: 11400000, guid: 199f1f9dfd5498347ae58dfc12508b97, type: 2}
-  - {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67, type: 2}
+  currEleList: []
 --- !u!114 &114809974695058462
 MonoBehaviour:
   m_ObjectHideFlags: 1
