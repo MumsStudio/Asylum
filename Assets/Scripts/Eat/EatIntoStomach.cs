@@ -4,20 +4,26 @@ using UnityEngine;
 
 public class EatIntoStomach : MonoBehaviour {
 
-    public List<Element> eles;
+    public List<Element> elesInStomach;
     public int size;
 
-    //add item into backpack
-    public void addToStomach(Element ele)
-    {
-        if(eles.Count >= size)
-            eles.RemoveAt(0);
 
-        eles.Add(ele);
+    //the method triggered when player hit yes eat bt
+    public void addToStomach(List<Element> currEleList)
+    {
+        Debug.Log("eaten");
+        //add elements into stomach
+        foreach (Element ele in currEleList)
+        {
+            if (elesInStomach.Count >= size)
+                elesInStomach.RemoveAt(0);
+
+            elesInStomach.Add(ele);
+        }
     }
 
     public void removeFromStomach(Element ele)
     {
-        eles.Remove(ele);
+        elesInStomach.Remove(ele);
     }
 }

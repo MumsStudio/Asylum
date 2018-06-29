@@ -28,6 +28,11 @@ public class EatSelected : MonoBehaviour {
 	void triggerEatOption() {
         eatOption.SetActive(true);  //enable the option box
 
+        //add elements into currentElements list at the yes bt
+        //clear the list first
+        eatOption.GetComponentInChildren<LoadCurrElementList>().eles.Clear();
+        eatOption.GetComponentInChildren<LoadCurrElementList>().blockBt = gameObject;
+
         string temp = "";
 
         //update info based on the given element
@@ -36,6 +41,7 @@ public class EatSelected : MonoBehaviour {
         foreach (Element ele in currEleList)
         {
             temp += "   " + ele.name;
+            eatOption.GetComponentInChildren<LoadCurrElementList>().eles.Add(ele);
         }
         digestHelper.text = temp;
 
@@ -53,18 +59,5 @@ public class EatSelected : MonoBehaviour {
             eleImage[counter].SetActive(true);
             counter++;
         }
-    }
-
-    //the method triggered when player hit yes eat bt
-    public void Eat()
-    {
-        //add elements into stomach
-        foreach(Element ele in currEleList)
-        {
-            stomach.GetComponent<EatIntoStomach>().addToStomach(ele);
-        }
-
-        //destory bt after eaten
-        Destroy(gameObject);
     }
 }
