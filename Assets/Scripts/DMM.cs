@@ -20,10 +20,11 @@ public class DMM : MonoBehaviour {
 
     private playercontroller thePlayer;
 
+    public bool QuestStart = false;
 
-   // public playercontroller temPlayer;
-	// Use this for initialization
-	
+    // public playercontroller temPlayer;
+    // Use this for initialization
+
 
 
 
@@ -50,10 +51,11 @@ public class DMM : MonoBehaviour {
 
             currentLine = 0;
             thePlayer.canMove = true;
+            QuestStart = true;
         }
 
         dText.text = dialogLines[currentLine];
-
+     
         //add picture
         if (imageL[currentLine] == null) DialogPortraitL.sprite = blank;
         else DialogPortraitL.sprite = imageL[currentLine];

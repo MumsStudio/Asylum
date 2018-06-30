@@ -10,8 +10,10 @@ public class dialogHolder : MonoBehaviour
     public Sprite[] DialogPortraitR;
 
     public string[] dialogueLines;
-
+   // public string[] questlines;
     public bool inzone = false;
+
+    
 
     // Use this for initialization
     void Start()
@@ -34,9 +36,26 @@ public class dialogHolder : MonoBehaviour
                 dMAn.imageL = DialogPortraitL;
                 dMAn.imageR = DialogPortraitR;
                 inzone = false;
+
             }
-            
         }
+        /*else if (inzone && Input.GetKeyUp(KeyCode.Space)&&dMAn.QuestStart)
+        { 
+           if (!dMAn.dialogActive && dMAn.QuestStart)
+            {
+                dMAn.dialogLines = questlines;
+                dMAn.currentLine = 0;
+                dMAn.ShowDialogue();
+
+                //add dialog portrait
+                dMAn.imageL = DialogPortraitL;
+                dMAn.imageR = DialogPortraitR;
+                inzone = false;
+
+            }
+
+        }*/
+       
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -55,24 +74,5 @@ public class dialogHolder : MonoBehaviour
         //return true;
     }
 
-    /*void OnCollisionStay2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Player")
-        {
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                //dMAn.ShowBox(dialogue);
-                if (!dMAn.dialogActive)
-                {
-                    dMAn.dialogLines = dialogueLines;
-                    dMAn.currentLine = 0;
-                    dMAn.ShowDialogue();
-
-                    //add dialog portrait
-                    dMAn.imageL= DialogPortraitL;
-                    dMAn.imageR = DialogPortraitR;
-                }
-            }
-        }
-    }*/
+   
 }
