@@ -10,8 +10,7 @@ using UnityEngine.UI;
 public class EatSelected : MonoBehaviour {
 
     public Button bt;
-    public GameObject eatOption;
-    //public HorizontalLayoutGroup runeImageList;
+    public GameObject eatOption;    
 
     //dk hwo to add image into the layout by script
     //using public image reference instead

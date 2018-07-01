@@ -25,7 +25,9 @@ public class EatZoneMenuManager : MonoBehaviour {
             Debug.Log("eaten key pressed");
             reverseZoneActive();
         }
-	}
+        zoneActive = zoneMenu.activeSelf;
+        optionActive = eatOption.activeSelf;
+    }
     
     //turn on and off for the eat zone
     public void reverseZoneActive()
