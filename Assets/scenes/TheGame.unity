@@ -719,6 +719,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2753677, y: 0.20096758}
   m_EdgeRadius: 0
+--- !u!1 &258536585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 258536586}
+  - component: {fileID: 258536587}
+  m_Layer: 5
+  m_Name: QuestMannager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &258536586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 258536585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 980927258}
+  - {fileID: 826644482}
+  - {fileID: 1264001462}
+  m_Father: {fileID: 1210588947}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &258536587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 258536585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd947693de506245aa79f6eeb935b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - {fileID: 980927257}
+  - {fileID: 826644481}
+  questCompleted: 
+  theDM: {fileID: 0}
 --- !u!1 &262668307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1579,55 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
+--- !u!1 &826644480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 826644482}
+  - component: {fileID: 826644481}
+  m_Layer: 5
+  m_Name: quest 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &826644481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826644480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6590945c93becd4e956ecf6dd192291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
+  theQM: {fileID: 258536587}
+  startText: 
+  endText: 
+--- !u!224 &826644482
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826644480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258536586}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &882843169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1774,55 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 964171773}
+--- !u!1 &980927256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 980927258}
+  - component: {fileID: 980927257}
+  m_Layer: 5
+  m_Name: quest 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &980927257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980927256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6590945c93becd4e956ecf6dd192291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
+  theQM: {fileID: 258536587}
+  startText: 
+  endText: 
+--- !u!224 &980927258
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980927256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258536586}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &987288251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +2002,7 @@ MonoBehaviour:
   dialogLines:
   - 
   currentLine: 0
+  QuestStart: 0
 --- !u!1 &1043190914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,7 +2188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1084252363}
   - component: {fileID: 1084252365}
-  - component: {fileID: 1084252364}
+  - component: {fileID: 1084252366}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -2057,45 +2209,6 @@ Transform:
   m_Father: {fileID: 1548243584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1084252364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084252362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1762243618e161f43b855b12cdab8779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogPortraitL:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
-  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
-  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
-  - {fileID: 21300000, guid: f84710f6545134a4791bd6703fd0be5e, type: 3}
-  - {fileID: 0}
-  DialogPortraitR:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 3ea36001530683a43ba26481e7964bc0, type: 3}
-  dialogueLines:
-  - "\u3002\u3002\u3002\u3002\u3002\u3002"
-  - knock knock
-  - "\u540C\u5B66\uFF0C\u4F60\u9192\u5566\u5417\uFF1F"
-  - "\u4F60\u8C01\u554A\uFF0C\u5413\u6211\u6211\u4E00\u8DF3"
-  - "\u540C\u5B66\u3002\u3002\u3002\u3002"
-  - "\u4F60\u5148\u51FA\u6765\uFF0C"
-  - "\u6211\u7ED9\u4F60\u770B\u6211\u7684\u5927\u5B9D\u8D1D\uFF01"
-  - "\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002"
-  inzone: 0
 --- !u!61 &1084252365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2121,6 +2234,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.35}
   m_EdgeRadius: 0
+--- !u!114 &1084252366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084252362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6d3c4f8db35f648b5c1706fdbece70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogPortraitL:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  DialogPortraitR:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dialogueLines:
+  - "\u3002\u3002\u3002\u3002\u3002\u3002"
+  - knock knock
+  - "\u540C\u5B66\uFF0C\u4F60\u9192\u5566\u5417\uFF1F"
+  - "\u4F60\u8C01\u554A\uFF0C\u5413\u6211\u6211\u4E00\u8DF3"
+  - "\u540C\u5B66\u3002\u3002\u3002\u3002"
+  - "\u4F60\u5148\u51FA\u6765\uFF0C"
+  - "\u6211\u7ED9\u4F60\u770B\u6211\u7684\u5927\u5B9D\u8D1D\uFF01"
+  - "\u3002\u3002\u3002\u3002\u3002\u3002\u3002\u3002"
+  questlines:
+  - "\u4E5F\u8BB8\u6211\u8BE5\u628A\u95E8\u5403\u6389"
+  inzone: 0
 --- !u!1 &1143806350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2461,7 @@ RectTransform:
   - {fileID: 87638029}
   - {fileID: 1011331035}
   - {fileID: 1430516387}
+  - {fileID: 258536586}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2362,6 +2517,55 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4d0adc3160ab8f409568b554c827c21, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1264001461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1264001462}
+  - component: {fileID: 1264001463}
+  m_Layer: 5
+  m_Name: quest 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1264001462
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264001461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 258536586}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1264001463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6590945c93becd4e956ecf6dd192291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
+  theQM: {fileID: 258536587}
+  startText: 
+  endText: 
 --- !u!1 &1309187560
 GameObject:
   m_ObjectHideFlags: 0
