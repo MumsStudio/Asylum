@@ -13,17 +13,45 @@ public class CheckAndStartFusion : MonoBehaviour {
 
         currFormula = GameObject.FindGameObjectWithTag("FusionFormulaDatabase").GetComponent<FusionFormulaStorage>().currFF;
 
-        //check if enough element
-        List<ElementSet> elesInStomach = stomach.GetComponent<EatIntoStomach>().elesInStomach;
-
-        foreach(ElementSet es in currFormula.eleP)
+        if (currFormula == null)
         {
-            if (es.CheckContain(elesInStomach))
-            {
-                //remove eles fusion to item and add to backpack
-            }
+            Debug.Log("No Formula Loaded.");
         }
 
+        else
+        {
+            //check if enough element
+            List<ElementSet> elesInStomach = stomach.GetComponent<EatIntoStomach>().elesInStomach;
+
+            bool res = true;
+
+            foreach (ElementSet es in currFormula.eleP)
+            {
+                if (!es.CheckContain(elesInStomach))
+                {
+                    res = false;
+                }
+            }
+
+            if (!res)
+            {
+                Debug.Log("No enough elements.");
+            }
+
+            //with enough elementSet, remove element from stomach, and add item into backpack
+            else
+            {
+                //remove all needed
+                foreach (ElementSet es in currFormula.eleP)
+                {
+                    es.RemoveFromSet(elesInStomach);
+                }
+
+                //add 1 item into backpack
+                backpack.GetComponent<Backpack>().addToBackpack(currFormula.item,1);
+                
+            }
+        }
 
     }
 }

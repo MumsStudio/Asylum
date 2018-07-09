@@ -28,7 +28,18 @@ public class ElementSet{
                 
             }
         }
-        Debug.Log("Check contain false");
         return false;
+    }
+    
+    public void RemoveFromSet(List<ElementSet> newEles)
+    {
+        foreach(ElementSet newEle in newEles)
+        {
+            if(ele == newEle.ele)
+            {
+                newEle.count -= count;
+                Debug.Log("Remove "+count+" " +ele +" from stomach.");
+            }
+        }
     }
 }

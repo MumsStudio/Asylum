@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Name: bucket
   m_EditorClassIdentifier: 
   eleP:
-  - eleNum: {fileID: 11400000, guid: 199f1f9dfd5498347ae58dfc12508b97, type: 2}
-    eleNeed: 2
-  - eleNum: {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67, type: 2}
-    eleNeed: 1
+  - ele: {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67, type: 2}
+    count: 2
+  - ele: {fileID: 11400000, guid: 199f1f9dfd5498347ae58dfc12508b97, type: 2}
+    count: 1
   sprite: {fileID: 21300000, guid: 0cddf06d60b5aa049aa06d91942fb8a0, type: 3}
+  item: {fileID: 11400000, guid: 7ba5683d5cb2d12498927f10ca456113, type: 2}

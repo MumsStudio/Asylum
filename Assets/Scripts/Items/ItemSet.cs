@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemSet : MonoBehaviour {
+    public ItemObject item;
+    public int count;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public ItemSet(ItemObject item, int count)
+    {
+        this.item = item;
+        this.count = count;
+    }
 }
