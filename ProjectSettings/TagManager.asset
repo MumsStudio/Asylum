@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - EatManager
+  - FusionFormulaDatabase
+  - FusionBt
+  - FormulaP
+  - FusionFormulaBt
   layers:
   - Default
   - TransparentFX

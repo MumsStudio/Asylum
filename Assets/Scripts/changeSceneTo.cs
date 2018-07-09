@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class changeSceneTo : MonoBehaviour {
 
-	public void play(string sceneTochangeTo){
-		Application.LoadLevel (sceneTochangeTo);
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void play(string sceneTochangeTo){
+		SceneManager.LoadScene(sceneTochangeTo);
 	}
 
 	public void quit(){

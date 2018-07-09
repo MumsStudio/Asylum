@@ -12,4 +12,23 @@ public class ElementSet{
         this.count = count;
         this.ele = ele;
     }
+
+    public bool CheckContain(List<ElementSet> newEles)
+    {
+        for (int i = 0; i < newEles.Count; i++)
+        {
+            if(newEles[i].ele == ele)
+            {
+                if (newEles[i].count >= count)
+                {
+                    Debug.Log("Check contain = true!");
+                    return true;
+                }
+                else break;
+                
+            }
+        }
+        Debug.Log("Check contain false");
+        return false;
+    }
 }

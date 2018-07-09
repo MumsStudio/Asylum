@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacbf328cd8e57c4c9cce863ef1f0e24, type: 3}
+  m_Name: bucket
+  m_EditorClassIdentifier: 
+  eleP:
+  - eleNum: {fileID: 11400000, guid: 199f1f9dfd5498347ae58dfc12508b97, type: 2}
+    eleNeed: 2
+  - eleNum: {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67, type: 2}
+    eleNeed: 1
+  sprite: {fileID: 21300000, guid: 0cddf06d60b5aa049aa06d91942fb8a0, type: 3}
