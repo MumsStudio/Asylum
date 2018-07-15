@@ -11,6 +11,7 @@ public class QuestObject : MonoBehaviour {
     public string startText;
     public string endText;
 
+    public PlayerSaveData psd;
 	// Use this for initialization
 	void Start () {
 		
@@ -29,5 +30,6 @@ public class QuestObject : MonoBehaviour {
         theQM.ShowQuestText(endText);
         theQM.questCompleted[questNumber] = true;
         gameObject.SetActive(false);
+        psd.completeQuest.Add(questNumber);
     }
 }

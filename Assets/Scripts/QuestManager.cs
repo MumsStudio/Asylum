@@ -7,6 +7,7 @@ public class QuestManager : MonoBehaviour {
     public bool[] questCompleted;
 
     public DMM theDM;
+
 	// Use this for initialization
 	void Start () {
         questCompleted = new bool[quests.Length];
@@ -23,5 +24,6 @@ public class QuestManager : MonoBehaviour {
 
         theDM.currentLine = 0;
         theDM.ShowDialogue();
+
     }
 }
