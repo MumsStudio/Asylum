@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemSet : MonoBehaviour {
+[System.Serializable]
+public class ItemSet{
     public ItemObject item;
     public int count;
 
