@@ -11,6 +11,7 @@ public class EatZoneMenuManager : MonoBehaviour {
 
     void Awake()
     {
+        zoneMenu = GameObject.FindGameObjectWithTag("eatzoon");
         zoneActive = true;
         reverseZoneActive();
 
