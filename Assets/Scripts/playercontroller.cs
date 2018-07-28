@@ -68,4 +68,10 @@ public class playercontroller : MonoBehaviour {
 		anim.SetFloat ("lastMoveX", lastMove.x);
 		anim.SetFloat ("lastMoveY", lastMove.y);
     }
+
+    public void playerMoveEnable()
+    {
+        canMove = true;
+        //Debug.Log("Player movement enable.");
+    }
 }

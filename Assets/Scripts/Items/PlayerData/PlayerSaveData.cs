@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class PlayerSaveData : MonoBehaviour {
 
@@ -24,6 +27,8 @@ public class PlayerSaveData : MonoBehaviour {
         playerDT.currBackPack = currBackPack;
         playerDT.currEleInStomach = currEleInStomach;
 
+#if UNITY_EDITOR
         EditorUtility.SetDirty(playerDT);
+#endif
     }
 }

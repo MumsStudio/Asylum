@@ -22,15 +22,11 @@ public class DMM : MonoBehaviour {
 
     public bool QuestStart = false;
 
-    // public playercontroller temPlayer;
-    // Use this for initialization
-
-
-
+    GameObject eatManager;
 
     // Use this for initialization
     void Start () {
-
+        eatManager = GameObject.FindGameObjectWithTag("EatManager");
         thePlayer = FindObjectOfType<playercontroller>();
 	}
 
@@ -39,9 +35,6 @@ public class DMM : MonoBehaviour {
     {
         if (dialogActive && Input.GetKeyDown(KeyCode.Space))
         {
-            //dBox.SetActive(false);
-            //dialogActive = false;
-
             currentLine++;
         }
         if (currentLine >= dialogLines.Length)
@@ -52,6 +45,7 @@ public class DMM : MonoBehaviour {
             currentLine = 0;
             thePlayer.canMove = true;
             QuestStart = true;
+            eatManager.GetComponent<EatZoneMenuManager>().eatEnable = true;
         }
 
         dText.text = dialogLines[currentLine];
@@ -63,17 +57,11 @@ public class DMM : MonoBehaviour {
         else DialogPortraitR.sprite = imageR[currentLine];
     }
 
-    /*public void ShowBox(string dialogue)
-    {
-        dialogActive = true;
-        dBox.SetActive(true);
-        dText.text = dialogue;
-    }*/
-
     public void ShowDialogue()
     {
         dialogActive = true;
         dBox.SetActive(true);
         thePlayer.canMove = false;
+        eatManager.GetComponent<EatZoneMenuManager>().eatEnable = false;
     }
 }

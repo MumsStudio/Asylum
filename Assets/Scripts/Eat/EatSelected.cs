@@ -20,12 +20,18 @@ public class EatSelected : MonoBehaviour {
     public Text digestHelper;
     public List<Element> currEleList;
 
+    GameObject eatManager;
+
 	void Start () {
         bt.onClick.AddListener(triggerEatOption);
+        eatManager = GameObject.FindGameObjectWithTag("EatManager");
     }
 	
 	void triggerEatOption() {
-        eatOption.SetActive(true);  //enable the option box
+        //disable eat zone
+        eatManager.GetComponent<EatZoneMenuManager>().reverseZoneActive();
+
+        eatManager.GetComponent<EatZoneMenuManager>().reverseOptMenuActive();  //enable the option box
 
         //add elements into currentElements list at the yes bt
         //clear the list first

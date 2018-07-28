@@ -13,6 +13,8 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
     public GameObject stomach;
 
+    public GameObject popUp;
+
     void Awake()
     {
         stomachMenu.SetActive(false);
@@ -95,17 +97,20 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
         //inform the stamache to remove all components
         stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(0);
+        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element "+elements[0].name+" has been removed from stomach.", 2f);
     }
 
     public void RemoveE1()
     {
         elements[1].SetActive(false);
         stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(1);
+        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element " + elements[0].name + " has been removed from stomach.", 2f);
     }
 
     public void RemoveE2()
     {
         elements[2].SetActive(false);
         stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(2);
+        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element " + elements[0].name + " has been removed from stomach.", 2f);
     }
 }

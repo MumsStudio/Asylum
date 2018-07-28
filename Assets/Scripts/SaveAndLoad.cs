@@ -10,12 +10,7 @@ public class SaveAndLoad : MonoBehaviour {
     public List<int> list1 = new List<int>();
     public Vector2 xy = new Vector2();
 
-    private savedata data;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private savedata data;    
 	
 	// Update is called once per frame
 	void Update () {

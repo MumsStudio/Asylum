@@ -11,7 +11,7 @@ public class EatIntoStomach : MonoBehaviour {
     //the method triggered when player hit yes eat bt
     public void addToStomach(List<Element> currEleList)
     {
-        Debug.Log("eaten");
+        //Debug.Log("eaten");
         //add elements into stomach
         foreach (Element ele in currEleList)
         {

@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 222804218685917370}
   - component: {fileID: 114570952973065532}
   - component: {fileID: 114463619645129178}
-  - component: {fileID: 114019365808556378}
   m_Layer: 5
   m_Name: element 3
   m_TagString: Untagged
@@ -94,7 +93,6 @@ GameObject:
   - component: {fileID: 222511428465612552}
   - component: {fileID: 114346230043196304}
   - component: {fileID: 114407023505117214}
-  - component: {fileID: 114785414346286160}
   m_Layer: 5
   m_Name: element 1
   m_TagString: Untagged
@@ -287,7 +285,6 @@ GameObject:
   - component: {fileID: 222535840102635410}
   - component: {fileID: 114150169887004876}
   - component: {fileID: 114985109425198654}
-  - component: {fileID: 114935394134091432}
   m_Layer: 5
   m_Name: element 2
   m_TagString: Untagged
@@ -345,19 +342,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114019365808556378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1029815352306862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49330bdda198d9d45b50049778944d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  list1: 
-  xy: {x: 0, y: 0}
 --- !u!114 &114071660143859386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -728,8 +712,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -769,8 +753,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1007,19 +991,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114785414346286160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204241676958718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49330bdda198d9d45b50049778944d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  list1: 
-  xy: {x: 0, y: 0}
 --- !u!114 &114837452205872540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1139,19 +1110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stomach: {fileID: 0}
   backpack: {fileID: 0}
---- !u!114 &114935394134091432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1913895294543234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49330bdda198d9d45b50049778944d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  list1: 
-  xy: {x: 0, y: 0}
+  popup: {fileID: 0}
 --- !u!114 &114952916940831108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1199,8 +1158,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

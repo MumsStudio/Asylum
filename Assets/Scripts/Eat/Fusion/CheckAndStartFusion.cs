@@ -8,7 +8,8 @@ public class CheckAndStartFusion : MonoBehaviour {
     public GameObject backpack;
 
     FusionFormula currFormula;
-    
+    public GameObject popup;
+
 	public void CheckAndAddIntoBackpack () {
 
         currFormula = GameObject.FindGameObjectWithTag("FusionFormulaDatabase").GetComponent<FusionFormulaStorage>().currFF;
@@ -16,6 +17,7 @@ public class CheckAndStartFusion : MonoBehaviour {
         if (currFormula == null)
         {
             Debug.Log("No Formula Loaded.");
+            popup.GetComponent<PopUpMessageController>().PopUpMsg("No Formula Loaded.",2f);
         }
 
         else
@@ -36,6 +38,7 @@ public class CheckAndStartFusion : MonoBehaviour {
             if (!res)
             {
                 Debug.Log("No enough elements.");
+                popup.GetComponent<PopUpMessageController>().PopUpMsg("No enough elements.", 2f);
             }
 
             //with enough elementSet, remove element from stomach, and add item into backpack
@@ -48,8 +51,8 @@ public class CheckAndStartFusion : MonoBehaviour {
                 }
 
                 //add 1 item into backpack
-                backpack.GetComponent<Backpack>().addToBackpack(currFormula.item,1);
-                
+                backpack.GetComponent<Backpack>().addToBackpack(currFormula.item,1);                
+                popup.GetComponent<PopUpMessageController>().PopUpMsg(currFormula.item + " has been added to backpack.", 2f);
             }
         }
 

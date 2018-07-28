@@ -9,7 +9,8 @@ TagManager:
   - FusionBt
   - FormulaP
   - FusionFormulaBt
-  - eatzoon
+  - EatZone
+  - PopMsg
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PopUp
   - 
   - 
   - 
