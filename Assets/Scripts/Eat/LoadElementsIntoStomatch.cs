@@ -17,6 +17,10 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
     void Awake()
     {
+        stomachMenu.SetActive(true);
+    }
+    private void Start()
+    {
         stomachMenu.SetActive(false);
     }
 

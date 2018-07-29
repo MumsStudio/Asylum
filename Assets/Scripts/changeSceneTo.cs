@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class changeSceneTo : MonoBehaviour {
-
+    private void Awake()
+    {
+        gameObject.SetActive(true);
+    }
     private void Start()
     {
         gameObject.SetActive(false);

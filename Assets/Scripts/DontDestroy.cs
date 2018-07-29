@@ -4,19 +4,10 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour {
 
-    private static bool objectExists;
 
 	// Use this for initialization
 	void Start () {
-        if (!objectExists)
-        {
-            objectExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+         DontDestroyOnLoad(transform.gameObject);
        
     }	
 }
