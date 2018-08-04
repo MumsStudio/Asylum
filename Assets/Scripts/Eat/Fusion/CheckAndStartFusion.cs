@@ -52,7 +52,7 @@ public class CheckAndStartFusion : MonoBehaviour {
 
                 //add 1 item into backpack
                 backpack.GetComponent<Backpack>().addToBackpack(currFormula.item,1);                
-                popup.GetComponent<PopUpMessageController>().PopUpMsg(currFormula.item + " has been added to backpack.", 2f);
+                popup.GetComponent<PopUpMessageController>().PopUpMsg(currFormula.item.itemName + " has been added to backpack.", 2f);
             }
         }
 

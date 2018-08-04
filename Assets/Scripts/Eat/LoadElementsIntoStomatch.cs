@@ -96,25 +96,59 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
     public void RemoveE0()
     {
-        //deactive button first
-        elements[0].SetActive(false);
-
         //inform the stamache to remove all components
+        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element "+ 
+            stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach[0].ele.name+
+            " has been removed from stomach.", 2f);
+
         stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(0);
-        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element "+elements[0].name+" has been removed from stomach.", 2f);
+        
+        //deactive button
+        elements[0].SetActive(false);
     }
 
     public void RemoveE1()
     {
+        if (elements[0].activeSelf)
+        {
+            popUp.GetComponent<PopUpMessageController>().PopUpMsg
+                ("Element " + stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach[1].ele.name
+                + " has been removed from stomach.", 2f);
+
+            stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(1);
+        }
+        else
+        {
+            popUp.GetComponent<PopUpMessageController>().PopUpMsg
+                   ("Element " + stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach[0].ele.name
+                   + " has been removed from stomach.", 2f);
+
+            stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(0);
+        }
         elements[1].SetActive(false);
-        stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(1);
-        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element " + elements[0].name + " has been removed from stomach.", 2f);
     }
 
     public void RemoveE2()
     {
+        if ((stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.Count == 3))
+        {
+            elements[2].SetActive(false);
+            popUp.GetComponent<PopUpMessageController>().
+                PopUpMsg("Element " + stomach.GetComponentInChildren<EatIntoStomach>()
+                .elesInStomach[2].ele.name + " has been removed from stomach.", 2f);
+            stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(2);
+        }
+        else
+        {
+            popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element " +
+                stomach.GetComponentInChildren<EatIntoStomach>()
+                .elesInStomach[stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.Count - 1].ele.name
+                + " has been removed from stomach.", 2f);
+
+            stomach.GetComponentInChildren<EatIntoStomach>().
+                elesInStomach.RemoveAt(stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.Count - 1);
+        }
+
         elements[2].SetActive(false);
-        stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(2);
-        popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element " + elements[0].name + " has been removed from stomach.", 2f);
     }
 }
