@@ -6,7 +6,7 @@ public class EatZoneMenuManager : MonoBehaviour {
 
     public bool eatEnable;
     public bool zoneActive;
-    public GameObject zoneMenu;
+    public GameObject eatZone;
  
     public GameObject eatOption;
     public bool optionActive;
@@ -16,7 +16,7 @@ public class EatZoneMenuManager : MonoBehaviour {
     void Awake()
     {
         playercontroller = GameObject.FindGameObjectWithTag("Player");
-        zoneMenu = GameObject.FindGameObjectWithTag("EatZone");
+        eatZone = GameObject.FindGameObjectWithTag("EatZone");
         zoneActive = true;
         reverseZoneActive();
 
@@ -29,11 +29,10 @@ public class EatZoneMenuManager : MonoBehaviour {
 	void Update () {
         if (eatEnable && Input.GetButtonUp("Eat"))
         {
-            Debug.Log("eaten key pressed");
             reverseZoneActive();
+            zoneActive = eatZone.activeSelf;
+            optionActive = eatOption.activeSelf;
         }
-        zoneActive = zoneMenu.activeSelf;
-        optionActive = eatOption.activeSelf;
     }
     
     //turn on and off for the eat zone
@@ -42,14 +41,14 @@ public class EatZoneMenuManager : MonoBehaviour {
         if (zoneActive)
         {
             zoneActive = false;
-            zoneMenu.SetActive(zoneActive);
+            eatZone.SetActive(zoneActive);
             //turn on player movement
             playercontroller.GetComponent<playercontroller>().playerMoveEnable();
         }
         else
         {
             zoneActive = true;
-            zoneMenu.SetActive(zoneMenu);
+            eatZone.SetActive(eatZone);
             //turn off player controller
             playercontroller.GetComponent<playercontroller>().canMove = false;
         }

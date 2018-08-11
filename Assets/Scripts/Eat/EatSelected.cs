@@ -21,16 +21,30 @@ public class EatSelected : MonoBehaviour {
     public List<Element> currEleList;
 
     GameObject eatManager;
+    Collider2D colid;
 
 	void Start () {
-        bt.onClick.AddListener(triggerEatOption);
+
         eatManager = GameObject.FindGameObjectWithTag("EatManager");
+
+        colid = gameObject.GetComponentInChildren<Collider2D>();
     }
-	
-	void triggerEatOption() {
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (colid.OverlapPoint(mousePosition))
+            {
+                triggerEatOption();
+            }
+        }
+    }
+
+    private void triggerEatOption() {
         //disable eat zone
         eatManager.GetComponent<EatZoneMenuManager>().reverseZoneActive();
-
         eatManager.GetComponent<EatZoneMenuManager>().reverseOptMenuActive();  //enable the option box
 
         //add elements into currentElements list at the yes bt
