@@ -24,8 +24,8 @@ public class PlayerSaveData : MonoBehaviour {
         playerDT.missedQuest = missedQuest;
         playerDT.progressingQuest = progressingQuest;
 
-        playerDT.currBackPack = currBackPack;
-        playerDT.currEleInStomach = currEleInStomach;
+        playerDT.currBackPack = currBackPack.items;
+        playerDT.currEleInStomach = currEleInStomach.elesInStomach;
 
 #if UNITY_EDITOR
         EditorUtility.SetDirty(playerDT);

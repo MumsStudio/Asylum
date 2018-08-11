@@ -9,7 +9,7 @@ public class PlayerData : ScriptableObject
     public List<int> completeQuest;
     public List<int> progressingQuest;
 
-    public Backpack currBackPack;
-    public EatIntoStomach currEleInStomach;
+    public List<ItemSet> currBackPack;
+    public List<ElementSet> currEleInStomach;
 }
 
