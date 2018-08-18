@@ -17,6 +17,7 @@ public class PlayerSaveData : MonoBehaviour {
     public Backpack currBackPack;
     public EatIntoStomach currEleInStomach;
 
+    public GameObject popup;
     // Update is called once per frame
     public void UpdateInfoInSavingData () {
 
@@ -26,6 +27,8 @@ public class PlayerSaveData : MonoBehaviour {
 
         playerDT.currBackPack = currBackPack.items;
         playerDT.currEleInStomach = currEleInStomach.elesInStomach;
+
+        popup.GetComponent<PopUpMessageController>().PopUpMsg("Saved!!!.", 1f);
 
 #if UNITY_EDITOR
         EditorUtility.SetDirty(playerDT);
