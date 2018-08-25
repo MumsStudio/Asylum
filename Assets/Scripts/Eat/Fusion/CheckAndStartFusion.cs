@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckAndStartFusion : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class CheckAndStartFusion : MonoBehaviour {
 
     FusionFormula currFormula;
     public GameObject popup;
+
+    public Button back;
 
 	public void CheckAndAddIntoBackpack () {
 
@@ -53,6 +56,9 @@ public class CheckAndStartFusion : MonoBehaviour {
                 //add 1 item into backpack
                 backpack.GetComponent<Backpack>().addToBackpack(currFormula.item,1);                
                 popup.GetComponent<PopUpMessageController>().PopUpMsg(currFormula.item.itemName + " has been added to backpack.", 2f);
+
+                //close stomach menu as well by triggering back button
+                back.onClick.Invoke();
             }
         }
 

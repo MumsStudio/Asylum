@@ -6,14 +6,11 @@ using UnityEngine.UI;
 public class LoadElementsIntoStomatch : MonoBehaviour {
 
     public GameObject stomachMenu;
-
     public List<GameObject> elements;
-
     public List<Image> images;
-
     public GameObject stomach;
-
     public GameObject popUp;
+    public Button back;
 
     void Awake()
     {
@@ -96,15 +93,15 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
     public void RemoveE0()
     {
-        //inform the stamache to remove all components
         popUp.GetComponent<PopUpMessageController>().PopUpMsg("Element "+ 
             stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach[0].ele.name+
             " has been removed from stomach.", 2f);
 
         stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(0);
         
-        //deactive button
-        elements[0].SetActive(false);
+
+        //close stomache menu
+        back.onClick.Invoke();
     }
 
     public void RemoveE1()
@@ -125,7 +122,9 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
             stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.RemoveAt(0);
         }
-        elements[1].SetActive(false);
+
+        //close stomache menu
+        back.onClick.Invoke();
     }
 
     public void RemoveE2()
@@ -147,8 +146,9 @@ public class LoadElementsIntoStomatch : MonoBehaviour {
 
             stomach.GetComponentInChildren<EatIntoStomach>().
                 elesInStomach.RemoveAt(stomach.GetComponentInChildren<EatIntoStomach>().elesInStomach.Count - 1);
-        }
+        }        
 
-        elements[2].SetActive(false);
+        //close stomache menu
+        back.onClick.Invoke();
     }
 }

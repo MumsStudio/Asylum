@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//to set the activation for some game objects
 public class AwakeSet : MonoBehaviour {
     public bool startWithActive;
 
@@ -12,6 +13,7 @@ public class AwakeSet : MonoBehaviour {
 
     void Start () {
         gameObject.SetActive(startWithActive);
+        //Debug.Log("Set " + gameObject.name + " active " + gameObject.activeSelf);
 	}
 	
 }
