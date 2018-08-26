@@ -1218,6 +1218,7 @@ MonoBehaviour:
   playerSDT: {fileID: 11400000, guid: facb46ff75d8f6344a4c60b15707e216, type: 2}
   playerRDT: {fileID: 11400000, guid: 48b3dc6f15f400f42b1562151f65c9e5, type: 2}
   popup: {fileID: 1672930211}
+  playerP: {fileID: 1086288362}
 --- !u!1 &400801907 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1206472606607982, guid: a40d941b9d9b67e4da5ac5d2ad455989,
@@ -6890,6 +6891,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 2a2f486e33d52ca4185323d5ece79d6c,
         type: 2}
+    - target: {fileID: 114555210062288124, guid: 6a775720960440c468ea00c8e7b7753c,
+        type: 2}
+      propertyPath: Playerp
+      value: 
+      objectReference: {fileID: 1086288362}
     m_RemovedComponents:
     - {fileID: 114062890722289336, guid: 6a775720960440c468ea00c8e7b7753c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6a775720960440c468ea00c8e7b7753c, type: 2}
