@@ -26,11 +26,10 @@ public class InteractToGetNewFormula : MonoBehaviour {
                     formulas.Add(newFormula);
 
                 //popup msg will be added after new popup event be built
-                /*//popup msg
-                popUp = GameObject.FindGameObjectsWithTag("PopMsg")[0];
+                //popup msg
                 popUp.GetComponentInChildren<PopUpMessageController>().
                     PopUpMsg("New formula " + newFormula.item.itemName + " has been added.", 3f);
-                */
+                
                 Debug.Log("fffffffffffff");
 
                 //then destory this gameobject
