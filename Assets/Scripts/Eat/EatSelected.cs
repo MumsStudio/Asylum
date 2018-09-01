@@ -8,8 +8,7 @@ using UnityEngine.UI;
 //give the list of elements, that can be digested into
 //show the information goe from the list in the eat option box and trigger the box
 public class EatSelected : MonoBehaviour {
-
-    public Button bt;
+    
     public GameObject eatOption;    
 
     //dk hwo to add image into the layout by script
