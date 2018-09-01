@@ -21,13 +21,16 @@ public class PlayerSaveData : MonoBehaviour {
 
     public GameObject popup;
     private Scene scene;
+    
 
  
     // Update is called once per frame
     public void UpdateInfoInSavingData () {
+        playerDT.reset = false;
+
         scene = SceneManager.GetActiveScene();
         Debug.Log("Active scene is '" + scene.name + "'.");
-
+        
         playerDT.completeQuest = missedQuest;
         playerDT.missedQuest = missedQuest;
         playerDT.progressingQuest = progressingQuest;

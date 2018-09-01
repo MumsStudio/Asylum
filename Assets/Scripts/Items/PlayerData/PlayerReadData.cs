@@ -20,26 +20,32 @@ public class PlayerReadData : MonoBehaviour
     // Update is called once per frame
     public void ReadInfoInSavingData()
     {
-        //currentS = playerSDT.scene.name;
-
-        playerRDT.completeQuest = playerSDT.missedQuest;
-        playerRDT.missedQuest = playerSDT.missedQuest;
-        playerRDT.progressingQuest = playerSDT.progressingQuest;
-
-        playerRDT.currBackPack = playerSDT.currBackPack;
-        playerRDT.currEleInStomach = playerSDT.currEleInStomach;
-
-        playerRDT.scene = playerSDT.scene;
-        playerP.GetComponent<Transform>().position = playerSDT.PPosition;
-
-        if (SceneManager.GetActiveScene().name != playerSDT.scene) { 
-            SceneManager.LoadScene(playerRDT.scene);
+        if (playerSDT.reset==true)
+        {
+            popup.GetComponent<PopUpMessageController>().PopUpMsg("No Saved Data!!!.", 1f);
         }
+        else {
 
-        popup.GetComponent<PopUpMessageController>().PopUpMsg("Read!!!.", 1f);
+            playerRDT.completeQuest = playerSDT.missedQuest;
+            playerRDT.missedQuest = playerSDT.missedQuest;
+            playerRDT.progressingQuest = playerSDT.progressingQuest;
+
+            playerRDT.currBackPack = playerSDT.currBackPack;
+            playerRDT.currEleInStomach = playerSDT.currEleInStomach;
+
+            playerRDT.scene = playerSDT.scene;
+            playerP.GetComponent<Transform>().position = playerSDT.PPosition;
+            playerRDT.reset= playerSDT.reset;
+
+            if (SceneManager.GetActiveScene().name != playerSDT.scene) {
+                SceneManager.LoadScene(playerRDT.scene);
+            }
+
+            popup.GetComponent<PopUpMessageController>().PopUpMsg("Read!!!.", 1f);
 
 #if UNITY_EDITOR
-        EditorUtility.SetDirty(playerSDT);
+            EditorUtility.SetDirty(playerSDT);
 #endif
+        }
     }
 }
