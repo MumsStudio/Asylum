@@ -26,5 +26,5 @@ MonoBehaviour:
     count: 3
   - ele: {fileID: 11400000, guid: 753771a6162c3144089a87e56d66491c, type: 2}
     count: 2
-  PPosition: {x: 13.286914, y: -0.5708444}
-  scene: 
+  PPosition: {x: 13.057742, y: -1.6566501}
+  scene: TheGame
