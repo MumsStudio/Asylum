@@ -14,4 +14,4 @@ MonoBehaviour:
   itemID: 0
   itemName: bucket
   description: An empty wood bucket
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 0cddf06d60b5aa049aa06d91942fb8a0, type: 3}
