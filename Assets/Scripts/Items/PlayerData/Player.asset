@@ -14,18 +14,14 @@ MonoBehaviour:
   missedQuest: 
   completeQuest: 
   progressingQuest: 
-  currBackPack:
-  - item: {fileID: 11400000, guid: 7ba5683d5cb2d12498927f10ca456113, type: 2}
-    count: 0
-  - item: {fileID: 11400000, guid: 7ba5683d5cb2d12498927f10ca456113, type: 2}
-    count: 0
+  currBackPack: []
   currEleInStomach:
   - ele: {fileID: 11400000, guid: 0205fc85d6c64db4594c38eb29e51e67, type: 2}
-    count: 3
+    count: 4
   - ele: {fileID: 11400000, guid: 199f1f9dfd5498347ae58dfc12508b97, type: 2}
     count: 3
   - ele: {fileID: 11400000, guid: 753771a6162c3144089a87e56d66491c, type: 2}
     count: 2
-  PPosition: {x: 3.18, y: 0.91}
-  scene: TheGame
-  reset: 1
+  PPosition: {x: 8.671633, y: -5.239341}
+  scene: nextlevel
+  reset: 0

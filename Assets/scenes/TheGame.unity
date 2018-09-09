@@ -5633,6 +5633,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 891814080}
+--- !u!1 &898965310 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1726209742552972, guid: c7e42e4186e6b2f41a7ae0ef1e8e50fa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1308024675}
+--- !u!114 &898965315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 898965310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8878f02eb5ddff4d81301d277c014f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926843131
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,7 +6960,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 0.1826073, y: 0.26449317}
   m_EdgeRadius: 0
@@ -11933,6 +11949,11 @@ Prefab:
       propertyPath: Playerp
       value: 
       objectReference: {fileID: 1086288362}
+    - target: {fileID: 114645482670056732, guid: 6a775720960440c468ea00c8e7b7753c,
+        type: 2}
+      propertyPath: eatZone
+      value: 
+      objectReference: {fileID: 1206385132}
     m_RemovedComponents:
     - {fileID: 114062890722289336, guid: 6a775720960440c468ea00c8e7b7753c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6a775720960440c468ea00c8e7b7753c, type: 2}
