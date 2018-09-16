@@ -13,7 +13,7 @@ public class PlayerReadData : MonoBehaviour
     public PlayerData playerSDT;
     public PlayerData playerRDT;
     public GameObject popup;
-    public GameObject playerP;
+   
 
     //[SerializeField] private string currentS;
 
@@ -34,7 +34,7 @@ public class PlayerReadData : MonoBehaviour
             playerRDT.currEleInStomach = playerSDT.currEleInStomach;
 
             playerRDT.scene = playerSDT.scene;
-            playerP.GetComponent<Transform>().position = playerSDT.PPosition;
+            
             playerRDT.reset= playerSDT.reset;
 
             if (SceneManager.GetActiveScene().name != playerSDT.scene) {

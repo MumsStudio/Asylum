@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 223626610033610146}
   - component: {fileID: 114036621055449820}
   - component: {fileID: 114782306137579250}
+  - component: {fileID: 114060274427361146}
   m_Layer: 5
   m_Name: PopUpCanvas
   m_TagString: Untagged
@@ -86,6 +87,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114060274427361146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1726209742552972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8878f02eb5ddff4d81301d277c014f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114147047926125786
 MonoBehaviour:
   m_ObjectHideFlags: 1

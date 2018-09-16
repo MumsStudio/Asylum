@@ -11,17 +11,19 @@ public class EatZoneMenuManager : MonoBehaviour {
     public GameObject eatOption;
     public bool optionActive;
 
-    GameObject playercontroller;
+    public GameObject playercontroller;
 
-    void Awake()
+    void Start()
     {
-        playercontroller = GameObject.FindGameObjectWithTag("Player");
         eatZone = GameObject.FindGameObjectWithTag("EatZone");
         zoneActive = true;
         reverseZoneActive();
 
+
+        eatZone = GameObject.FindGameObjectWithTag("EatOption");
         optionActive = true;
         reverseOptMenuActive();
+
         eatEnable = true;
     }   
 	

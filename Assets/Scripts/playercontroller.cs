@@ -10,8 +10,7 @@ public class playercontroller : MonoBehaviour {
 	private Vector2 lastMove;
 
     private Rigidbody2D myRigidbody;
-
-    private static bool playerExists;
+    
 
     public bool canMove;
 	// Use this for initialization
@@ -20,15 +19,6 @@ public class playercontroller : MonoBehaviour {
         myRigidbody = GetComponent<Rigidbody2D>();
         canMove = true;
 
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
 	}
 	
 	// Update is called once per frame

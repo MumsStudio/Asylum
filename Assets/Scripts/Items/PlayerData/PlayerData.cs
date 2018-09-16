@@ -12,7 +12,7 @@ public class PlayerData : ScriptableObject
 
     public List<ItemSet> currBackPack;
     public List<ElementSet> currEleInStomach;
-    public Vector2 PPosition;
+
     public string scene;
     public bool reset;
 

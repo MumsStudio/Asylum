@@ -11,6 +11,7 @@ TagManager:
   - FusionFormulaBt
   - EatZone
   - PopMsg
+  - EatOption
   layers:
   - Default
   - TransparentFX

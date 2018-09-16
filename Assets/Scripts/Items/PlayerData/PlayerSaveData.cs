@@ -10,7 +10,7 @@ using UnityEditor;
 public class PlayerSaveData : MonoBehaviour {
 
     public PlayerData playerDT;
-    public GameObject Playerp;
+ 
 
     public List<int> missedQuest;
     public List<int> completeQuest;
@@ -38,7 +38,7 @@ public class PlayerSaveData : MonoBehaviour {
         playerDT.currBackPack = currBackPack.items;
         playerDT.currEleInStomach = currEleInStomach.elesInStomach;
 
-        playerDT.PPosition = Playerp.GetComponent<Transform>().position;
+        
         playerDT.scene = scene.name;
 
         popup.GetComponent<PopUpMessageController>().PopUpMsg("Saved!!!.", 1f);
